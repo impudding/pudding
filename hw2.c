@@ -35,3 +35,18 @@
  35   printf(" 日  一  二  三  四  五  六 \n");
  36 
  37 
+ 38   for (count = 1; count < month; count++)
+ 39     space[count + 1] = (space[count] + m_days[count]) % 7;
+ 40 
+ 41   for (count = 1; count <= space[i]; count++)
+ 42     printf("   ");
+ 43 
+ 44   for (count = 1;count <= m_days[i];count++)
+ 45     printf("%3d", count);
+ 46 
+ 47     if(n % 7 == (7 - space[i]))
+ 48      printf("\n  ");
+ 49 
+ 50 return 0;
+ 51 }
+
